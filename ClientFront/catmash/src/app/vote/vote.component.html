@@ -1,0 +1,11 @@
+<div class="vote-container" *ngIf="cats.length === 2">
+  <div class="vote-item">
+    <img [src]="cats[0].url" />
+    <button (click)="vote(cats[0].id)">J'aime</button>
+  </div>
+  <div class="divider"></div>
+  <div class="vote-item">
+    <img [src]="cats[1].url" />
+    <button (click)="vote(cats[1].id)">J'aime</button>
+  </div>
+</div>
