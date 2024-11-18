@@ -1,0 +1,18 @@
+<div class="scores-container">
+  <div
+    *ngFor="let cat of cats; let i = index"
+    class="score-card"
+    [ngClass]="{
+      'podium-first': i === 1,
+      'podium-second': i === 0,
+      'podium-third': i === 2,
+      'podium-general': i > 2
+    }"
+  >
+    <div class="rank-circle">
+      {{ i === 1 ? "1" : i === 0 ? "2" : i + 1 }}
+    </div>
+    <img [src]="cat.url" />
+    <div class="score-text">Score : {{ cat.score }}pts</div>
+  </div>
+</div>
