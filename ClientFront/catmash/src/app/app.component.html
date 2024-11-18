@@ -1,0 +1,22 @@
+<header class="header">
+  <div class="header-content">
+    <img src="/logo.png" alt="CatMash Logo" class="header-logo" />
+    <h1 class="header-title">CATMASH</h1>
+  </div>
+</header>
+
+<main class="content">
+  <router-outlet></router-outlet>
+</main>
+
+<footer class="footer">
+  <a
+    class="footer-button"
+    [routerLink]="buttonLink"
+    (click)="updateMatchCount()"
+  >
+    <img src="/chevron-up.png" class="footer-button-arrow" />
+    <div class="footer-button-text">{{ buttonText }}</div>
+    <div class="footer-button-matches">{{ matchCount }} matchs joués</div>
+  </a>
+</footer>
