@@ -1,3 +1,4 @@
+L'atelier Kata CATMASH Solution Spring boot / Angular / MySQL
 # CatMash
 
 CatMash is a web application where users can vote for their favorite cats from a collection of cat images. The application includes a backend built with **Spring Boot** and a frontend developed using **Angular**. Votes are recorded and cats are ranked based on their scores, with a podium-style leaderboard.
